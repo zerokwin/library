@@ -1,20 +1,33 @@
 // color
 // text color
-$color_text: #000;  // text main color
+$clr_text: #000;  // text main color
 
 // button color
-$color_button: #1cb394;
+$clr_button: #1cb394;
 
 // border color
-$color_border: #ddd;
+$clr_border: #ddd;
+$clr_border_input: #66afe9;
+
+// shadow color
+$clr_shadow_input: rgba(120,190,237,.5);
 
 // background color
-$color_bg_body: #f4f4f4;
+$clr_bg_body: #f4f4f4;
+
+// tips color
+$clr_error: #a94442;  // error
+$clr_success: #3c763d;  // success
+
+// disabled color
+$clr_disabled: #eee;
+$clr_disabled_text: #777;
 
 
 // font
 // font family
 $fontFamily: "STHeitiSC-Light","Source Han Sans-Light","Microsoft Yahei","SimHei","Helvetica Neue","Arial",sans-serif;
+$iconFontFamily: 'Glyphicons Halflings';
 
 // font size
 $fs_base: 14px;
@@ -37,5 +50,11 @@ $h_footer: 50px;  // footer height
 // width
 $minwidth: 1200px;
 
-// inline-block
-$amend: 4px;
+// amend
+$amend: 4px;  // inline-block
+$space: 20px;  // list li space
+$sp_input_h: 10px;  // input padding-left,padding-right
+$sp_input_v: 5px;  // input padding-top,padding-bottom
+
+// radius
+$radius_input: 2px;

@@ -1,3 +1,5 @@
+@import "config";
+
 // 闭合子元素浮动
 %clearfix {
     &:before {
@@ -18,4 +20,85 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+// 禁止点击
+%disabled {
+    background-color: $clr_disabled;
+    color: $clr_disabled_text;
+    cursor: not-allowed;
+
+    &:hover {
+        background-color: $clr_disabled;
+        color: $clr_disabled_text;
+    }
+}
+
+// input正确、成功提示(边框)
+%success {
+    border-color: $clr_success;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+// input错误、失败提示(边框)
+%error {
+    border-color: $clr_error;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+// input border transition
+%input-transition {
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    &:focus {
+        border-color: $clr_border_input;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $clr_shadow_input;
+    }
+}
+
+// input正确、成功提示
+%successicon {
+    font-family: $iconFontFamily;
+    font-size: $fs_base;
+    color: $clr_success;
+    text-align: center;
+    pointer-events: none;
+
+    &:after{
+        content: "\e013";
+    }
+}
+
+// input错误、失败提示
+%erroricon {
+    font-family: $iconFontFamily;
+    font-size: $fs_base;
+    color: $clr_error;
+    text-align: center;
+    pointer-events: none;
+
+    &:after{
+        content: "\e014";
+    }
+}
+
+// vue过渡效果
+%expand-transition {
+    transition: height .3s ease, opacity .23s ease;
+}
+
+// vue过渡效果
+%expand-enter-leave {
+    height: 0;
+    opacity: 0;
+}
+
+// vue过渡效果
+%v-enter-leave {
+    transition: opacity .3s ease;
+
+    &.v-enter,
+    &.v-leave {
+        opacity: 0;
+    }
 }

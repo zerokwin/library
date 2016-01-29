@@ -128,6 +128,22 @@ th {
 
 input {
     line-height: normal;
+
+    &::-webkit-input-placeholder {
+        font-weight: 300;
+    }
+
+    &::-ms-input-placeholder {
+        font-weight: 300;
+    }
+
+    &::-moz-placeholder {
+        font-weight: 300;
+    }
+}
+
+input[type="text"] {
+    border-radius: $radius_input;
 }
 
 input[type="checkbox"],
