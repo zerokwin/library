@@ -106,8 +106,7 @@ html input[disabled] {
     cursor: default;
 }
 
-button:focus,
-input:focus {
+:focus {
   	outline: 0;
 }
 
@@ -117,13 +116,23 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
+address,
+caption,
+code,
+em,
+strong,
+th {
+    font-style: normal;
+    font-weight: normal;
+}
+
 input {
     line-height: normal;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-    padding: 0; /* 2 */
+    padding: 0;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -151,6 +160,7 @@ legend {
 
 textarea {
     overflow: auto;
+    resize: none;
     -webkit-appearance: none;
 	appearance: none;
 }
@@ -158,14 +168,22 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+
+    caption {
+        text-align: left;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    th {
+        padding: 0;
+        text-align: left;
+    }
 }
 
-caption,
-th {
-  	text-align: left;
-}
-
-td,
-th {
-    padding: 0;
+select {
+    -webkit-appearance: none;
+    background-color: #fff;
 }
