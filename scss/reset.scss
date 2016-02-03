@@ -19,6 +19,19 @@ body {
     line-height: $lineHeight;
 }
 
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
 article,
 aside,
 figcaption,
@@ -33,8 +46,8 @@ section {
 audio,
 canvas,
 video {
-    display: inline-block; /* 1 */
-    vertical-align: baseline; /* 2 */
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 audio:not([controls]) {
@@ -71,17 +84,17 @@ svg:not(:root) {
 }
 
 hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
 }
 
 button,
 input,
 select,
 textarea {
-    font: inherit; /* 1 */
-    margin: 0; /* 2 */
+    font: inherit;
+    margin: 0;
 }
 
 button {
@@ -94,11 +107,11 @@ select {
 }
 
 button,
-html input[type="button"], /* 1 */
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
+    -webkit-appearance: button;
+    cursor: pointer;
 }
 
 button[disabled],
@@ -170,8 +183,8 @@ fieldset {
 }
 
 legend {
-    border: 0; /* 1 */
-    padding: 0; /* 2 */
+    border: 0;
+    padding: 0; 
 }
 
 textarea {
@@ -202,4 +215,9 @@ table {
 select {
     -webkit-appearance: none;
     background-color: #fff;
+}
+
+ul,
+ol {
+    list-style-type: none;
 }
